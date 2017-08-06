@@ -19,6 +19,7 @@
 - Use type system to model domain (discriminated unions)
 - pattern matching
 - active patterns
+- F# as a scripting language
 
 
 ## Giraffe
@@ -35,3 +36,6 @@
 - Subset of System, FSharpCore
 - No IL compilation
 
+## FAKE
+
+- F# make, DSL for build scripts
