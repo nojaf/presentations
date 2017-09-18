@@ -1,4 +1,4 @@
-namespace WhyFSharp
+namespace FSharp
 
 open System
 
@@ -10,6 +10,5 @@ module Conciseness =
         let (name, age) = (person.Name, person.Age)
         [0..age]
         |> List.map (sprintf "%s -- %i" name) 
-        |> fun names -> String.Join(",")
+        |> fun names -> String.Join(",", names)
         |> printfn "%s"
-        

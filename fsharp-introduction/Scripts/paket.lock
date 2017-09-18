@@ -1,0 +1,5 @@
+
+GITHUB
+  remote: dustinmoris/Giraffe
+    src/Giraffe/ComputationExpressions.fs (bb453b8ed53ed98d0d925156f7601943bae66064)
+    src/Giraffe/Tasks.fs (bb453b8ed53ed98d0d925156f7601943bae66064)

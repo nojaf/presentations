@@ -1,0 +1,94 @@
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>Giraffe Exercise</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.2/css/bulma.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/style.css"/>
+    <link rel="icon" href="/favicon.ico?v" />
+    <base target="_blank">
+</head>
+<body>
+<section class="hero is-dark">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <div class="logo">
+                        <img src="https://raw.githubusercontent.com/dustinmoris/Giraffe/develop/giraffe.png" alt="">
+                    </div>
+                </div>
+                <div class="column">
+                    <p class="subtitle">
+                        A functional ASP.NET Core micro web framework for building rich web applications.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section" id="main">
+    <div class="container">
+        <h1 class="title">
+            Github repos
+        </h1>
+        <div class="columns">
+            <div class="column">
+                <form action="/search" method="POST">
+                    <div class="field is-grouped">
+                        <p class="control is-expanded">
+                            <input class="input" type="text" placeholder="Enter Github user name">
+                        </p>
+                        <p class="control">
+                            <input type="submit" class="button is-primary" value="Search"/>
+                        </p>
+                    </div>
+                </form>
+            </div>
+            <div class="column">
+                <!-- hide results when form is not submitted -->
+                <nav class="panel">
+                    <p class="panel-heading">
+                        repositories
+                    </p>
+                    <a class="panel-block" href="https://github.com/dustinmoris/Giraffe">
+                    <span class="panel-icon">
+                      <i class="fa fa-book"></i>
+                    </span>
+                        Giraffe
+                    </a>
+                    <a class="panel-block" href="https://github.com/fable-compiler/Fable">
+                    <span class="panel-icon">
+                      <i class="fa fa-book"></i>
+                    </span>
+                        Fable
+                    </a>
+                    <a class="panel-block" href="https://github.com/Microsoft/visualfsharp/">
+                    <span class="panel-icon">
+                      <i class="fa fa-book"></i>
+                    </span>
+                        visualfsharp
+                    </a>
+                </nav>
+            </div>
+        </div>
+
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Giraffe exercise</strong> by <a href="http://nojaf.com">Florian Verdonck</a> for
+                <a href="http://axxes.com">Axxes</a>
+                <a class="icon" href="https://github.com/nojaf/presentations">
+                    <i class="fa fa-github"></i>
+                </a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

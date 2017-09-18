@@ -1,11 +1,11 @@
-namespace WhyFSharp
+namespace FSharp
 
 module Correctness =
 
     type PersonalName = {FirstName:string; LastName:string}
-    
-    let changeFirstNameToBob personName =
-        { personName with FirstName = "Bob" }
+
+    let changeFirstNameToBob barry age =
+        { barry with FirstName = sprintf "Bob, %i" age }
         
     type Address =
         { Street: string; City: string; Zip: string; }

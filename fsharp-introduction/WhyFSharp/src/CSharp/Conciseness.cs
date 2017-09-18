@@ -16,7 +16,7 @@ namespace CSharp
             int age = person.Age;
             string name = person.Name;
 
-            Console.WriteLine(String.Join(",", Enumerable.Range(0, age).Select(a => $"{name} -- {a}")));
+            Console.WriteLine(String.Join(",", Enumerable.Range(0, age + 1).Select(a => $"{name} -- {a}")));
         }
     }
 }
