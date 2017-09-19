@@ -14,7 +14,7 @@
 
 - Create a view for the `'/'` route as shown in `wwwroot/preview.html`
 - Use `Giraffe.XmlViewEngine`, [source](https://github.com/dustinmoris/Giraffe/blob/master/src/Giraffe/XmlViewEngine.fs)
-- Consider a strategy for recurring html element on each page to follow.
+- Consider a strategy for recurring html elements on each page to follow.
 
 ### 2 Create the form postback
 
@@ -25,7 +25,3 @@
 ### 3 Add an integration test
 
 - Check out [SampleApp.Tests](https://github.com/dustinmoris/Giraffe/tree/master/samples/SampleApp/SampleApp.Tests)
-
-### 4 Extra: Add Barba.js for smooth transitions
-
-See [barbajs.org](http://barbajs.org/)
