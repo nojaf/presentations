@@ -1,0 +1,18 @@
+{
+  "name": "fable-introduction",
+  "version": "1.0.0",
+  "description": "[![Issue Stats](http://issuestats.com/github/fsprojects/FsReveal/badge/issue)](http://issuestats.com/github/fsprojects/FsReveal)\r [![Issue Stats](http://issuestats.com/github/fsprojects/FsReveal/badge/pr)](http://issuestats.com/github/fsprojects/FsReveal)",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node-sass ./theme/axxes.scss ./output/css/theme/axxes.css",
+    "watch": "npm run compile -- --watch",
+    "prestart": "npm run compile",
+    "start": "npm run watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.8.3"
+  }
+}

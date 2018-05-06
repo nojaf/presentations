@@ -1,0 +1,84 @@
+/**
+ * Axxes theme for reveal.js.
+ *
+ * Copyright (C) 2018 Florian Verdonck
+ */
+// Default mixins and settings -----------------
+@import "../output/css/theme/template/mixins";
+@import "../output/css/theme/template/settings";
+// ---------------------------------------------
+
+// Include theme-specific fonts
+// @import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+// @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #FFF;
+
+$axxes-orange: rgb(247, 164, 54);
+
+$mainFont: 'Calibri', sans-serif;
+$linkColor: $axxes-orange;
+$linkColorHover: darken($linkColor, 20%);
+$headingColor: $axxes-orange;
+$headingFont: 'Calibri', Impact, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: -0.03em;
+$headingTextTransform: none;
+$selectionBackgroundColor: invert($linkColor, 20%);
+$mainFontSize: 30px;
+$mainColor: black;
+
+// Theme template ------------------------------
+@import "../output/css/theme/template/theme";
+// ---------------------------------------------
+
+.reveal li {
+  color: $axxes-orange;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  // list-style-image: url("../../images/favicon.ico");
+  span {
+    color: $mainColor;
+  }
+
+  ul li {
+    color: $mainColor
+  }
+}
+
+#axxes-logo {
+  background: white;
+  img {
+    background: none;
+    border: none;
+    box-shadow: none;
+    max-width: 200px;
+  }
+}
+
+.reveal blockquote p {
+  font-size: 24px;
+}
+
+.reveal table.pre {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.scroll {
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+@media (min-width: 800px) {
+  .scroll {
+    max-height: 50vh;
+  }
+}
+
+#tea-container {
+  height: 30vh;
+  display: block;
+  text-align: center;
+}
