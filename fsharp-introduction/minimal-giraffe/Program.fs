@@ -17,6 +17,13 @@ open System.Text
 // Web app
 // ---------------------------------
 
+(*
+type HttpFuncResult = Task<HttpContext option>
+type HttpFunc       = HttpContext -> HttpFuncResult
+type HttpHandler    = HttpFunc  -> HttpFunc
+type ErrorHandler   = exn -> ILogger -> HttpHandler
+*)
+
 let webApp (next:HttpFunc) (context:HttpContext) =
     // fun (next: HttpFunc) ->
     //     fun (context: HttpContext) ->

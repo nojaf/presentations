@@ -1,0 +1,17 @@
+C:\temp\minimal-giraffe\bin\Debug\netcoreapp2.0\Views\Index.cshtml
+C:\temp\minimal-giraffe\bin\Debug\netcoreapp2.0\minimal_giraffe.deps.json
+C:\temp\minimal-giraffe\bin\Debug\netcoreapp2.0\minimal_giraffe.runtimeconfig.json
+C:\temp\minimal-giraffe\bin\Debug\netcoreapp2.0\minimal_giraffe.runtimeconfig.dev.json
+C:\temp\minimal-giraffe\bin\Debug\netcoreapp2.0\minimal_giraffe.dll
+C:\temp\minimal-giraffe\bin\Debug\netcoreapp2.0\minimal_giraffe.pdb
+C:\temp\minimal-giraffe\obj\Debug\netcoreapp2.0\minimal-giraffe.fsproj.CoreCompileInputs.cache
+C:\temp\minimal-giraffe\obj\Debug\netcoreapp2.0\minimal_giraffe.dll
+C:\temp\minimal-giraffe\obj\Debug\netcoreapp2.0\minimal_giraffe.pdb
+C:\Users\nojaf\Projects\presentations\fsharp-introduction\minimal-giraffe\obj\Debug\netcoreapp2.0\minimal-giraffe.fsproj.CoreCompileInputs.cache
+C:\Users\nojaf\Projects\presentations\fsharp-introduction\minimal-giraffe\obj\Debug\netcoreapp2.0\minimal_giraffe.dll
+C:\Users\nojaf\Projects\presentations\fsharp-introduction\minimal-giraffe\obj\Debug\netcoreapp2.0\minimal_giraffe.pdb
+C:\Users\nojaf\Projects\presentations\fsharp-introduction\minimal-giraffe\bin\Debug\netcoreapp2.0\minimal_giraffe.deps.json
+C:\Users\nojaf\Projects\presentations\fsharp-introduction\minimal-giraffe\bin\Debug\netcoreapp2.0\minimal_giraffe.runtimeconfig.json
+C:\Users\nojaf\Projects\presentations\fsharp-introduction\minimal-giraffe\bin\Debug\netcoreapp2.0\minimal_giraffe.runtimeconfig.dev.json
+C:\Users\nojaf\Projects\presentations\fsharp-introduction\minimal-giraffe\bin\Debug\netcoreapp2.0\minimal_giraffe.dll
+C:\Users\nojaf\Projects\presentations\fsharp-introduction\minimal-giraffe\bin\Debug\netcoreapp2.0\minimal_giraffe.pdb

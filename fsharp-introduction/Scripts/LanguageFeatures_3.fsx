@@ -16,8 +16,11 @@ let printUser user =
     | None -> "none found"
     |> printfn "%s"
     
-8  |> (getUserFromDatabase >> printUser)
-7  |> (getUserFromDatabase >> printUser)
+8  
+|> getUserFromDatabase 
+|> printUser
+
+(getUserFromDatabase >> printUser) 7
 
 
 (* Option.bind

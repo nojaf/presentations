@@ -17,3 +17,5 @@ let fetchUrlAsync url =
         
 fetchUrlAsync "https://axxes.com"
 |> Async.RunSynchronously
+
+System.Threading.Tasks.Task.FromResult(printfn "Do")

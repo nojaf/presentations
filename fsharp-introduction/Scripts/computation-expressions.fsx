@@ -59,6 +59,7 @@ let divideThreeMeh a b c =
 let divideThreeCE a b c =
     opt {
         let! d = divide a b
+        printfn "foo"
         let! e = divide d c
         return e
     }

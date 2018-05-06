@@ -17,13 +17,13 @@ let times a = // times a b c
         fun c ->
             a * b * c
             
-let twelve = times 2 3 2
+let twelve = (((times 2) 3) 2)
 
 (* Piping |> *)
 
 let printDate () =
     DateTime.Now.ToString("d")
-    |> sprintf "Today is %s"
+    |> sprintf "Today is %i %s" 3
     
 printDate()
 
@@ -42,6 +42,9 @@ let (---) a b =
     a - b - 3
     
 13 --- 3
+
+3
+|> (+) 2
     
 (* Type Alias *)    
 
@@ -69,7 +72,7 @@ module Finances =
         match account with
         | Account ba -> ba
 
-let printBankAccount account =
+let printBankAccount (account:Finances.BankAccount option) =
     match account with
     | Some ba ->
         Finances.readBankAccount ba
