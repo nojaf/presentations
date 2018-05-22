@@ -77,7 +77,10 @@ Florian Verdonck - [@verdonckflorian](https://twitter.com/verdonckflorian)
 
 ### The end?
 
-- ...
+- <span>Only scratched the surface</span>
+- <span>Gitter</span>
+- <span>Some Q's, some A's</span>
+- <span>Swing by our booth</span>
 
 ***
 
