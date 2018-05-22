@@ -13,21 +13,24 @@
 // @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
 
 // Override theme settings (see ../template/settings.scss)
-$backgroundColor: #FFF;
 
-$axxes-orange: rgb(247, 164, 54);
+@import url('https://fonts.googleapis.com/css?family=Dosis|Open+Sans');
 
-$mainFont: 'Calibri', sans-serif;
+$backgroundColor: #F2F5F5;
+
+$axxes-orange: #ffaa33;
+
+$mainFont: 'Open Sans', sans-serif;
 $linkColor: $axxes-orange;
 $linkColorHover: darken($linkColor, 20%);
 $headingColor: $axxes-orange;
-$headingFont: 'Calibri', Impact, sans-serif;
+$headingFont: 'Dosis', Impact, sans-serif;
 $headingTextShadow: none;
 $headingLetterSpacing: -0.03em;
 $headingTextTransform: none;
 $selectionBackgroundColor: invert($linkColor, 20%);
 $mainFontSize: 30px;
-$mainColor: black;
+$mainColor: rgb(97,102,102);
 
 // Theme template ------------------------------
 @import "../output/css/theme/template/theme";
@@ -48,12 +51,11 @@ $mainColor: black;
 }
 
 #axxes-logo {
-  background: white;
   img {
     background: none;
     border: none;
     box-shadow: none;
-    max-width: 200px;
+    max-width: 300px;
   }
 }
 
@@ -81,4 +83,10 @@ $mainColor: black;
   height: 30vh;
   display: block;
   text-align: center;
+}
+
+.slides {
+  background-image: url("../../images/axxes-logo-left.png");
+  background-repeat: no-repeat;
+  background-size: 15%;
 }
