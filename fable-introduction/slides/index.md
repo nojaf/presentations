@@ -6,10 +6,12 @@
 
 ***
 <script>
-const link = document.createElement("link");
-link.setAttribute("rel","icon");
-link.setAttribute("href", ""./images/favicon.ico?v=2");
-document.documentElement.firstElementChild.append(link);
+    window.addEventListener("load", () => {
+        const link = document.createElement("link");
+        link.setAttribute("rel","icon");
+        link.setAttribute("href", "./images/favicon.ico?v=2");
+        document.documentElement.firstElementChild.append(link);
+    });
 </script>
 <div id="axxes-logo">
     <img src="images/axxes-logo.png" />
