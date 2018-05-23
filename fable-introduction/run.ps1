@@ -1,0 +1,1 @@
+docker run --rm --name techorama -v "${PWD}\output:/usr/share/nginx/html:ro" -p 9000:80 -d nginx
