@@ -1,0 +1,1 @@
+docker run -d -p 1433:1433 -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=Password1!' -e 'MSSQL_PID=Express' --name twitter_db mcr.microsoft.com/mssql/server:latest
