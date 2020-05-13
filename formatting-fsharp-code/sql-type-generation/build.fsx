@@ -6,6 +6,7 @@ nuget DustyTables
 nuget Fake.Core.Target"
 #load ".fake/build.fsx/intellisense.fsx"
 
+open System
 open DustyTables
 open FSharp.Compiler.Ast
 open Fake.Core
@@ -186,7 +187,7 @@ Target.create "Generate" (fun _ ->
         CodeFormatter.FormatASTAsync
             (ast, "tmp.fsx", [], None, ({ FormatConfig.FormatConfig.Default with StrictMode = true }))
         |> Async.RunSynchronously
-        |> sprintf "/// Warning: generated code 😅🙈🙉\n%s"
+        |> sprintf "/// Warning: generated code at %s 😅🙈🙉\n%s" (DateTime.Now.ToString())
 
     System.IO.File.WriteAllText((Shell.pwd() </> "MyApp" </> "Database.fs"), sourceCode)
     printfn "generated database code")

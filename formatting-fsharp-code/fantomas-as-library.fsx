@@ -6,7 +6,10 @@ open FSharp.Compiler.Ast
 open FsAst
 
 // See http://localhost:9060/#/ast?data=N4KABGBEAmCmBmBLAdrAzpAXFSAacUiaAYmolmPAIYA2as%2BEkAxgPZwWQC27ArjbDABZAJ5C%2BAgDoAnSchlyBAFzBVo0VWABG2FCoC8mgNTbIIAL5A
-
+//
+//module MyModule
+//
+// let add a b: int = a + b
 let parsedFile =
     let mdl = "MyModule"
 
