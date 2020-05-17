@@ -193,3 +193,5 @@ Target.create "Generate" (fun _ ->
     printfn "generated database code")
 
 Target.runOrDefault "Generate"
+
+__LINE__

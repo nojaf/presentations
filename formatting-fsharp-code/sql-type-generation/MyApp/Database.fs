@@ -1,4 +1,4 @@
-/// Warning: generated code at 5/13/2020 2:52:55 PM 😅🙈🙉
+/// Warning: generated code at 5/13/2020 5:51:36 PM 😅🙈🙉
 module MyApp.Database
 
 open DustyTables
@@ -9,24 +9,24 @@ type User =
     { Id: int
       Name: string }
 
-let getUsers(): Result<list<User>, exn> =
+let getUsers (): Result<list<User>, exn> =
     connectionString
     |> Sql.connect
-       |> Sql.query "SELECT * FROM [dbo].users"
-          |> Sql.execute (fun reader ->
-              { Id = reader.int "id"
-                Name = reader.string "name" })
+    |> Sql.query "SELECT * FROM [dbo].users"
+    |> Sql.execute (fun reader ->
+        { Id = reader.int "id"
+          Name = reader.string "name" })
 
 type Tweet =
     { Content: string
       Id: int
       UserId: int }
 
-let getTweets(): Result<list<Tweet>, exn> =
+let getTweets (): Result<list<Tweet>, exn> =
     connectionString
     |> Sql.connect
-       |> Sql.query "SELECT * FROM [dbo].tweets"
-          |> Sql.execute (fun reader ->
-              { Content = reader.string "content"
-                Id = reader.int "id"
-                UserId = reader.int "user_id" })
+    |> Sql.query "SELECT * FROM [dbo].tweets"
+    |> Sql.execute (fun reader ->
+        { Content = reader.string "content"
+          Id = reader.int "id"
+          UserId = reader.int "user_id" })
