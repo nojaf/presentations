@@ -1,8 +1,8 @@
-#r @"C:\Users\nojaf\.nuget\packages\fsharp.compiler.service\34.1.0\lib\netstandard2.0\FSharp.Compiler.Service.dll"
-#r @"C:\Users\nojaf\.nuget\packages\fantomas\3.3.0\lib\netstandard2.0\Fantomas.dll"
-#r @"C:\Users\nojaf\.nuget\packages\fsast\0.2.0\lib\netstandard2.0\FsAst.dll"
+#r @"C:\Users\nojaf\.nuget\packages\fsharp.compiler.service\35.0.0\lib\netstandard2.0\FSharp.Compiler.Service.dll"
+#r @"C:\Users\nojaf\.nuget\packages\fantomas\4.0.0-alpha-006\lib\netstandard2.0\Fantomas.dll"
+#r @"C:\Users\nojaf\.nuget\packages\fsast\0.3.0\lib\netstandard2.0\FsAst.dll"
 
-open FSharp.Compiler.Ast
+open FSharp.Compiler.SyntaxTree
 open FsAst
 
 // See http://localhost:9060/#/ast?data=N4KABGBEAmCmBmBLAdrAzpAXFSAacUiaAYmolmPAIYA2as%2BEkAxgPZwWQC27ArjbDABZAJ5C%2BAgDoAnSchlyBAFzBVo0VWABG2FCoC8mgNTbIIAL5A
@@ -46,5 +46,5 @@ open Fantomas
 CodeFormatter.GetVersion()
 
 CodeFormatter.FormatASTAsync
-    (parsedFile, "tmp.fsx", [], None, ({ FormatConfig.FormatConfig.Default with StrictMode = true }))
+    (parsedFile, "tmp.fsx", [], None, FormatConfig.FormatConfig.Default)
 |> Async.RunSynchronously

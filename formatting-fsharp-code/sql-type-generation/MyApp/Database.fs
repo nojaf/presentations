@@ -1,13 +1,12 @@
-/// Warning: generated code at 5/13/2020 5:51:36 PM 😅🙈🙉
+/// Warning: generated code at 5/25/2020 9:01:43 PM 😅🙈🙉
 module MyApp.Database
 
 open DustyTables
 
-let connectionString = "Server=localhost;Database=twitter;User Id=sa;Password=Password1!;"
+let connectionString =
+    "Server=localhost;Database=twitter;User Id=sa;Password=Password1!;"
 
-type User =
-    { Id: int
-      Name: string }
+type User = { Id: int; Name: string }
 
 let getUsers (): Result<list<User>, exn> =
     connectionString

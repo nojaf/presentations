@@ -1,14 +1,14 @@
 #r "paket:
-nuget FSharp.Compiler.Service 34.1.0
+nuget FSharp.Compiler.Service 35.0.0
 nuget FsAST
-nuget Fantomas 3.3.0
+nuget Fantomas prerelease
 nuget DustyTables
 nuget Fake.Core.Target"
 #load ".fake/build.fsx/intellisense.fsx"
 
 open System
 open DustyTables
-open FSharp.Compiler.Ast
+open FSharp.Compiler.SyntaxTree
 open Fake.Core
 open Fake.IO
 open Fake.IO.FileSystemOperators
@@ -182,12 +182,13 @@ let generateDatabaseCode() =
     | Error err -> failwithf "yeah something went wrong: %A" err
 
 Target.create "Generate" (fun _ ->
+    let timestamp = DateTime.Now.ToString()
     let ast = generateDatabaseCode()
     let sourceCode =
         CodeFormatter.FormatASTAsync
-            (ast, "tmp.fsx", [], None, ({ FormatConfig.FormatConfig.Default with StrictMode = true }))
+            (ast, "tmp.fsx", [], None, FormatConfig.FormatConfig.Default) //({ FormatConfig.FormatConfig.Default with StrictMode = true }))
         |> Async.RunSynchronously
-        |> sprintf "/// Warning: generated code at %s 😅🙈🙉\n%s" (DateTime.Now.ToString())
+        |> sprintf "/// Warning: generated code at %s 😅🙈🙉\n%s" timestamp
 
     System.IO.File.WriteAllText((Shell.pwd() </> "MyApp" </> "Database.fs"), sourceCode)
     printfn "generated database code")
