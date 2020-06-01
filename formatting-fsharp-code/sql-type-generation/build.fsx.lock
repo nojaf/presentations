@@ -2,6 +2,11 @@ STORAGE: NONE
 RESTRICTION: == netstandard2.0
 NUGET
   remote: https://api.nuget.org/v3/index.json
+    BlackFox.ColoredPrintf (1.0.3)
+      BlackFox.MasterOfFoo (>= 1.0.2 < 2.0)
+      FSharp.Core (>= 4.2.3 < 5.0)
+    BlackFox.MasterOfFoo (1.0.5)
+      FSharp.Core (>= 4.2.3 < 5.0)
     DustyTables (2.1)
       FSharp.Core (>= 4.7)
       Microsoft.Data.SqlClient (>= 1.1.2)
@@ -42,13 +47,13 @@ NUGET
     Fake.IO.FileSystem (5.20)
       Fake.Core.String (>= 5.20)
       FSharp.Core (>= 4.7.1)
-    Fantomas (4.0.0-alpha-006)
+    Fantomas (4.0.0-alpha-007)
       FSharp.Compiler.Service (>= 35.0)
       FSharp.Core (>= 4.7.1)
     FParsec (1.1.1)
       FSharp.Core (>= 4.3.4)
-    FsAST (0.3)
-      Fantomas (>= 4.0.0-alpha-005)
+    FsAst (0.4)
+      Fantomas (>= 4.0.0-alpha-006)
       Microsoft.SourceLink.GitHub (>= 1.0)
     FSharp.Compiler.Service (35.0)
       FSharp.Core (>= 4.6.2)

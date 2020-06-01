@@ -1,5 +1,5 @@
 #r @"C:\Users\nojaf\.nuget\packages\fsharp.compiler.service\35.0.0\lib\netstandard2.0\FSharp.Compiler.Service.dll"
-#r @"C:\Users\nojaf\.nuget\packages\fantomas\4.0.0-alpha-006\lib\netstandard2.0\Fantomas.dll"
+#r @"C:\Users\nojaf\.nuget\packages\fantomas\4.0.0-alpha-007\lib\netstandard2.0\Fantomas.dll"
 #r @"C:\Users\nojaf\.nuget\packages\fsast\0.3.0\lib\netstandard2.0\FsAst.dll"
 
 open FSharp.Compiler.SyntaxTree

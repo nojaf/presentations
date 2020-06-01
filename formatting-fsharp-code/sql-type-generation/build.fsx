@@ -1,4 +1,5 @@
 #r "paket:
+nuget BlackFox.ColoredPrintf
 nuget FSharp.Compiler.Service 35.0.0
 nuget FsAST
 nuget Fantomas prerelease
@@ -12,9 +13,12 @@ open FSharp.Compiler.SyntaxTree
 open Fake.Core
 open Fake.IO
 open Fake.IO.FileSystemOperators
-open Fantomas
 open FsAst
 open FSharp.Compiler.Range
+open Fantomas
+open Fantomas.FakeHelpers
+open Fantomas.FormatConfig
+open BlackFox.ColoredPrintf
 
 type TableInfo =
     { Name: string
@@ -179,7 +183,7 @@ let generateDatabaseCode() =
                                                                                              ("DustyTables")))
                                                                      .AddDeclaration(connectionStringDeclaration)
                                                                      .AddDeclarations(tableInfoDeclarations)))
-    | Error err -> failwithf "yeah something went wrong: %A" err
+    | Result.Error err -> failwithf "yeah something went wrong: %A" err
 
 Target.create "Generate" (fun _ ->
     let timestamp = DateTime.Now.ToString()
@@ -193,6 +197,20 @@ Target.create "Generate" (fun _ ->
     System.IO.File.WriteAllText((Shell.pwd() </> "MyApp" </> "Database.fs"), sourceCode)
     printfn "generated database code")
 
-Target.runOrDefault "Generate"
 
-__LINE__
+
+Target.create "Format" (fun _ ->
+    FakeHelpers.formatCode FormatConfig.Default [| "MyApp" </> "Program.fs" |]
+    |> Async.RunSynchronously
+    |> printfn "%O")
+
+Target.create "Check" (fun _ ->
+    FakeHelpers.checkCode FormatConfig.Default [| "MyApp" </> "Program.fs" |]
+    |> Async.RunSynchronously
+    |> fun checkResult ->
+        if checkResult.NeedsFormatting then
+            failwith "%A needs formatting!" checkResult.Formatted
+        else
+            colorprintfn  "$DarkCyan[All files are formatted!]")
+
+Target.runOrDefault "Generate"
