@@ -1,4 +1,4 @@
-/// Warning: generated code at 5/25/2020 9:01:43 PM 😅🙈🙉
+/// Warning: generated code at 6/1/2020 2:29:33 PM 😅🙈🙉
 module MyApp.Database
 
 open DustyTables

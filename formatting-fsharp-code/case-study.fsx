@@ -1,8 +1,9 @@
 /// Formatting F# code
 /// A case study
 
-type FormatConfig =
-    { PageWidth: int; Indent: int } // the number of spaces
+type FormatConfig = { 
+    PageWidth: int; 
+    Indent: int } // the number of spaces
 
 let binaryUIntValue = 0x4000u
 
