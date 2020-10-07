@@ -1,0 +1,1 @@
+docker run --rm --name haxx -v "${PWD}/build:/usr/share/nginx/html:ro" -p 7010:80 -d nginx

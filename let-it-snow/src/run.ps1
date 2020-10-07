@@ -1,0 +1,1 @@
+docker run --rm --name modules -v "${PWD}/modules:/usr/share/nginx/html:ro" -p 1009:80 -d nginx
