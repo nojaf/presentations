@@ -1,6 +1,10 @@
-# New Project
+# Let it Snow sample
 
 > ✨ Bootstrapped with Create Snowpack App (CSA).
+
+## Prerequisites
+
+Follow the [certificate steps](https://www.snowpack.dev/#https%2Fhttp2) first to enable http/2 support.
 
 ## Available Scripts
 
