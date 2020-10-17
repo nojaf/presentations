@@ -3,8 +3,9 @@ import Hero from "./Hero";
 
 function App() {
     const [count, setCount] = useState(0);
-    const increase = () => setCount(count + 1);
+    const increase = () => setCount(count + 10);
     const decrease = () => setCount(count - 1);
+    const reset = () => setCount(0);
 
     return (
         <>
@@ -15,6 +16,7 @@ function App() {
                     <div className="btn-group">
                         <button className={'btn btn-primary'} onClick={increase}>Up</button>
                         <button className={'btn btn-primary'} onClick={decrease}>Down</button>
+                        <button className={'btn btn-danger'} onClick={reset}>Reset</button>
                     </div>
                 </form>
             </div>
